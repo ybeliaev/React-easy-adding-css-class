@@ -8,12 +8,12 @@ export default class App extends Component {
   state = {
     todoData: [
       this.createItem("Drink Coffee", true, true),
-      this.createItem("Create React App", false, true),
-      this.createItem("Study Bible"),
+      this.createItem("Create React App"),
+      this.createItem("Study Bible", false, true),
       this.createItem("Read book of Hemingway")
     ]
   };
-  createItem(label, done, important) {
+  createItem(label, done = false, important = false) {
     return {
       label,
       done,
