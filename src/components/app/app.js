@@ -7,13 +7,13 @@ export default class App extends Component {
   maxId = 100;
   state = {
     todoData: [
-      this.createTodoItem("Drink Coffee", true, true),
-      this.createTodoItem("Create React App", false, true),
-      this.createTodoItem("Study Bible"),
-      this.createTodoItem("Read book of Hemingway")
+      this.createItem("Drink Coffee", true, true),
+      this.createItem("Create React App", false, true),
+      this.createItem("Study Bible"),
+      this.createItem("Read book of Hemingway")
     ]
   };
-  createTodoItem(label, done, important) {
+  createItem(label, done, important) {
     return {
       label,
       done,
