@@ -6,12 +6,15 @@ import "./list.css";
 const List = ({ todos }) => {
   const elements = todos.map(item => {
     const { id, ...itemProps } = item;
+
     return (
-      <li key={id} className="list-item">
+      <li key={id} className="list-group-item">
         <ListItem {...itemProps} />
       </li>
     );
   });
-  return <ul className="todo-list">{elements}</ul>;
+
+  return <ul className="list-group">{elements}</ul>;
 };
+
 export default List;

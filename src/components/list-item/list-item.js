@@ -10,15 +10,16 @@ export default class ListItem extends Component {
     const { label, important, done } = this.props;
     const style = {
       color: important ? "steelblue" : "black",
-      fontWeight: important ? "bold" : "normal"
+      fontWeight: important ? "bold" : "normal",
+      textDecoration: done ? "line-through" : "none"
     };
-    let classNames = "todo-list-item";
-    if (done) {
-      classNames += " done";
-    }
-    if (important) {
-      classNames += " important";
-    }
+    let classNames = "list-item";
+    // if (done) {
+    //   classNames += " done";
+    // }
+    // if (important) {
+    //   classNames += " important";
+    // }
     return (
       <span className={classNames}>
         <span className="list-item-label" style={style}>

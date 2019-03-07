@@ -1,3 +1,3 @@
-import ListItem from "./todo-list-item";
+import ListItem from "./list-item";
 
 export default ListItem;
