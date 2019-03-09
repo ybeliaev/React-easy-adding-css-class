@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./list-item.css";
 
 export default class ListItem extends Component {
-  state = {
-    done: false
-  };
+  // state = {
+  //   done: false
+  // };
 
   render() {
     const { label, important, done } = this.props;
